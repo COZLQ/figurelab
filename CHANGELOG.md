@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.1.0 — release candidate
+## v0.1.0 — 2026-11-10
 
 ### Added
 
@@ -22,4 +22,4 @@
 - Font availability can affect SVG text on another device.
 - Third-party vector editor compatibility has not been exhaustively tested.
 
-This entry describes the prepared candidate; no GitHub release has been published yet.
+Source and release downloads are available from [COZLQ/figurelab](https://github.com/COZLQ/figurelab).

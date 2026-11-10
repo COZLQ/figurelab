@@ -1,6 +1,6 @@
 # Release preparation report
 
-Date: 2026-11-09. Candidate: v0.1.0. Status: ready for repository upload.
+Local preparation: 2026-11-09. GitHub publication: 2026-11-10. Version: v0.1.0.
 
 ## Clean source validation
 
@@ -33,6 +33,8 @@ The publication check rejected a synthetic credential and a deliberately broken 
 
 This audit is a practical release check, not a comprehensive security assessment.
 
-## Still external to this preparation
+## GitHub publication
 
-The repository has not been uploaded, no release has been published, and GitHub Actions has not run remotely. A hosted demo URL will be added only after deployment. External vector-editor compatibility remains a separate check.
+Source was uploaded to the public [COZLQ/figurelab repository](https://github.com/COZLQ/figurelab). The [first GitHub Actions run](https://github.com/COZLQ/figurelab/actions/runs/42766873793) passed on Linux, including type checks, 48 tests, publication checks, and the production build. The workflow badge in the README links to subsequent results. Versioned downloads are maintained on the repository's [Releases page](https://github.com/COZLQ/figurelab/releases).
+
+A hosted demo URL will be added only after deployment. External vector-editor compatibility remains a separate check.

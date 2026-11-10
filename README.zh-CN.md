@@ -97,7 +97,7 @@ pnpm start
 
 ## 发布状态
 
-v0.1.0 候选版本已在 Windows 本地通过类型检查、48 项自动化测试、浏览器操作检查和正式构建，也完成过真实 DeepSeek 请求验证。已准备 GitHub Actions 配置，首次远程运行需在仓库发布后完成。
+v0.1.0 源码已上传至 [COZLQ/figurelab](https://github.com/COZLQ/figurelab)。Windows 本地类型检查、48 项自动化测试、浏览器操作检查和正式构建已通过，GitHub Actions 的 Linux 检查也已通过，并完成过真实 DeepSeek 请求验证。各版本下载见 [Releases](https://github.com/COZLQ/figurelab/releases)。
 
 详见 [验收记录](docs/validation.md)、[更新记录](CHANGELOG.md) 和 [发布清单](docs/release-checklist.md)。
 

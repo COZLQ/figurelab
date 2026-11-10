@@ -103,7 +103,7 @@ Provider costs and data handling follow the provider you configure. Review [SECU
 
 ## Project status
 
-The v0.1.0 release candidate has passed local type checks, 48 automated tests, browser workflow checks, and a production build on Windows. A real DeepSeek request has also been verified. The included GitHub Actions workflow is ready for its first remote run after publication.
+The v0.1.0 source is published at [COZLQ/figurelab](https://github.com/COZLQ/figurelab). Local type checks, 48 automated tests, browser workflow checks, and a production build passed on Windows; GitHub Actions also passed on Linux. A real DeepSeek request has been verified. See [releases](https://github.com/COZLQ/figurelab/releases) for versioned downloads.
 
 See [validation details](docs/validation.md), the [changelog](CHANGELOG.md), and the [release checklist](docs/release-checklist.md).
 
