@@ -16,6 +16,8 @@ Local results are recorded in the [release-preparation report](release-report.md
 
 ## When publishing to GitHub
 
+The public repository [COZLQ/figurelab](https://github.com/COZLQ/figurelab) was created on 2026-11-10. Source upload, remote CI, and the release are still pending.
+
 1. Review the source archive and license.
 2. Create the intended repository under the intended account.
 3. Push the prepared source and confirm the first GitHub Actions run.
@@ -30,4 +32,4 @@ Suggested description:
 
 Suggested topics: scientific-visualization, diagram-editor, research-tools, react-flow, nextjs, svg, typescript.
 
-The current candidate has no hosted-demo URL and no published GitHub release. No repository owner or URL is fabricated in these materials.
+The current candidate has no hosted-demo URL and no published GitHub release.

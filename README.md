@@ -4,6 +4,8 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [Quick start](#quick-start) · [Configuration](docs/configuration.md)
 
+[![CI](https://github.com/COZLQ/figurelab/actions/workflows/ci.yml/badge.svg)](https://github.com/COZLQ/figurelab/actions/workflows/ci.yml)
+
 ![FigureLab: describe, generate, edit, and export](docs/assets/demo.gif)
 
 *Actual app capture, edited into a short walkthrough; waiting is shortened. [Watch the MP4](docs/assets/demo.mp4).*
@@ -23,12 +25,16 @@ The current interface is in Simplified Chinese. English documentation is provide
 
 ## Quick start
 
-Use **Node.js 24.x** and **pnpm 11.25.0**. Clone this repository or extract its source ZIP, then run inside the project directory:
+Use **Node.js 24.x** and **pnpm 11.25.0**. Clone the repository and start the editor:
 
 ```sh
+git clone https://github.com/COZLQ/figurelab.git
+cd figurelab
 pnpm install --frozen-lockfile
 pnpm dev
 ```
+
+If you downloaded the source ZIP, extract it and run the two `pnpm` commands inside its project directory.
 
 Open [http://127.0.0.1:3000](http://127.0.0.1:3000). Start from a template, or import a file from [examples/](examples/).
 

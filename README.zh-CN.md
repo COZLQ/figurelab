@@ -4,6 +4,8 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [AI 配置](docs/configuration.md)
 
+[![CI](https://github.com/COZLQ/figurelab/actions/workflows/ci.yml/badge.svg)](https://github.com/COZLQ/figurelab/actions/workflows/ci.yml)
+
 ![FigureLab：描述、生成、编辑、导出](docs/assets/demo.gif)
 
 真实应用操作关键步骤剪辑，等待片段已缩短。[观看 MP4](docs/assets/demo.mp4)。
@@ -23,12 +25,16 @@ FigureLab 是面向研究流程、实验设计和模型架构的本地图形编�
 
 ## 本地启动
 
-使用 **Node.js 24.x** 和 **pnpm 11.25.0**。克隆仓库或解压源码 ZIP 后，在项目目录运行：
+使用 **Node.js 24.x** 和 **pnpm 11.25.0**。克隆仓库并启动编辑器：
 
 ```sh
+git clone https://github.com/COZLQ/figurelab.git
+cd figurelab
 pnpm install --frozen-lockfile
 pnpm dev
 ```
+
+如果下载了源码 ZIP，先解压，再在项目目录运行上面的两条 `pnpm` 命令。
 
 打开 [http://127.0.0.1:3000](http://127.0.0.1:3000)，选择模板，或导入 [examples/](examples/) 中的项目文件。
 
