@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "id": "46fcb35b-bacc-461e-8916-0c6ca4bb5241",
+  "title": "材料缺陷识别研究流程",
+  "updatedAt": "2026-11-09T14:23:05.769Z",
+  "nodes": [
+    {
+      "id": "data_collection",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "图像采集与标注",
+        "subtitle": "收集材料缺陷图像并完成标注",
+        "kicker": "01 / STEP",
+        "color": "#4D9688"
+      }
+    },
+    {
+      "id": "preprocessing_split",
+      "position": {
+        "x": 325,
+        "y": 0
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "预处理与数据划分",
+        "subtitle": "对图像进行预处理并划分数据集",
+        "kicker": "02 / STEP",
+        "color": "#4D9688"
+      }
+    },
+    {
+      "id": "model_training",
+      "position": {
+        "x": 650,
+        "y": 0
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "训练分类模型",
+        "subtitle": "使用划分后的数据训练缺陷分类模型",
+        "kicker": "03 / STEP",
+        "color": "#6486BB"
+      }
+    },
+    {
+      "id": "testing_analysis",
+      "position": {
+        "x": 975,
+        "y": 0
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "独立测试与结果分析",
+        "subtitle": "在独立测试集上评估并分析结果",
+        "kicker": "04 / STEP",
+        "color": "#9677B5"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "data_collection",
+      "target": "preprocessing_split",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-2",
+      "source": "preprocessing_split",
+      "target": "model_training",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-3",
+      "source": "model_training",
+      "target": "testing_analysis",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    }
+  ]
+}

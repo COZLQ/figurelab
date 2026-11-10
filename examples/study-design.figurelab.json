@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "id": "example-study-design",
+  "title": "对照实验设计",
+  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "nodes": [
+    {
+      "id": "screen",
+      "position": {
+        "x": 150,
+        "y": 0
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "capsule",
+        "title": "研究对象筛选",
+        "subtitle": "按纳入与排除标准筛选",
+        "kicker": "01 / STEP",
+        "color": "#EA7752"
+      }
+    },
+    {
+      "id": "allocate",
+      "position": {
+        "x": 150,
+        "y": 236
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "基线测量与分组",
+        "subtitle": "记录基线并进行随机分配",
+        "kicker": "02 / STEP",
+        "color": "#4D9688"
+      }
+    },
+    {
+      "id": "control",
+      "position": {
+        "x": 0,
+        "y": 472
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "对照组",
+        "subtitle": "执行预先规定的对照方案",
+        "kicker": "03 / STEP",
+        "color": "#6486BB"
+      }
+    },
+    {
+      "id": "intervention",
+      "position": {
+        "x": 300,
+        "y": 472
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "干预组",
+        "subtitle": "执行预先规定的干预方案",
+        "kicker": "04 / STEP",
+        "color": "#9677B5"
+      }
+    },
+    {
+      "id": "measure",
+      "position": {
+        "x": 150,
+        "y": 708
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "统一结果测量",
+        "subtitle": "按相同标准记录研究结果",
+        "kicker": "05 / STEP",
+        "color": "#BB9655"
+      }
+    },
+    {
+      "id": "compare",
+      "position": {
+        "x": 150,
+        "y": 944
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "capsule",
+        "title": "组间比较",
+        "subtitle": "估计效应并报告不确定性",
+        "kicker": "06 / STEP",
+        "color": "#65717B"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "screen",
+      "target": "allocate",
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-2",
+      "source": "allocate",
+      "target": "control",
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top",
+      "label": "对照路径",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-3",
+      "source": "allocate",
+      "target": "intervention",
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top",
+      "label": "干预路径",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-4",
+      "source": "control",
+      "target": "measure",
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-5",
+      "source": "intervention",
+      "target": "measure",
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-6",
+      "source": "measure",
+      "target": "compare",
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top",
+      "label": "",
+      "color": "#A2ABA8"
+    }
+  ]
+}

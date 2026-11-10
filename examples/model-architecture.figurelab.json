@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "id": "example-model-architecture",
+  "title": "双分支图像分类模型",
+  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "nodes": [
+    {
+      "id": "input",
+      "position": {
+        "x": 0,
+        "y": 108
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "capsule",
+        "title": "输入图像",
+        "subtitle": "待分析的图像数据",
+        "kicker": "01 / STEP",
+        "color": "#EA7752"
+      }
+    },
+    {
+      "id": "preprocess",
+      "position": {
+        "x": 320,
+        "y": 108
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "数据预处理",
+        "subtitle": "规范输入并进行适当变换",
+        "kicker": "02 / STEP",
+        "color": "#4D9688"
+      }
+    },
+    {
+      "id": "local",
+      "position": {
+        "x": 640,
+        "y": 0
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "局部特征分支",
+        "subtitle": "提取局部结构表示",
+        "kicker": "03 / STEP",
+        "color": "#6486BB"
+      }
+    },
+    {
+      "id": "global",
+      "position": {
+        "x": 640,
+        "y": 216
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "全局特征分支",
+        "subtitle": "提取全局上下文表示",
+        "kicker": "04 / STEP",
+        "color": "#9677B5"
+      }
+    },
+    {
+      "id": "fusion",
+      "position": {
+        "x": 960,
+        "y": 108
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "process",
+        "title": "特征融合",
+        "subtitle": "整合两个分支的信息",
+        "kicker": "05 / STEP",
+        "color": "#BB9655"
+      }
+    },
+    {
+      "id": "output",
+      "position": {
+        "x": 1280,
+        "y": 108
+      },
+      "width": 240,
+      "height": 156,
+      "data": {
+        "kind": "capsule",
+        "title": "分类输出",
+        "subtitle": "生成待验证的分类预测",
+        "kicker": "06 / STEP",
+        "color": "#65717B"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "input",
+      "target": "preprocess",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-2",
+      "source": "preprocess",
+      "target": "local",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-3",
+      "source": "preprocess",
+      "target": "global",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-4",
+      "source": "local",
+      "target": "fusion",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-5",
+      "source": "global",
+      "target": "fusion",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-6",
+      "source": "fusion",
+      "target": "output",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    }
+  ]
+}

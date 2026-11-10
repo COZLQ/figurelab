@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "id": "example-research-workflow",
+  "title": "研究流程图",
+  "updatedAt": "2026-11-09T00:00:00.000Z",
+  "nodes": [
+    {
+      "id": "node-1",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 220,
+      "height": 132,
+      "data": {
+        "kind": "process",
+        "title": "研究问题",
+        "subtitle": "明确假设与研究目标",
+        "kicker": "01 / QUESTION",
+        "color": "#EA7752"
+      }
+    },
+    {
+      "id": "node-2",
+      "position": {
+        "x": 290,
+        "y": 0
+      },
+      "width": 220,
+      "height": 132,
+      "data": {
+        "kind": "process",
+        "title": "实验设计",
+        "subtitle": "选择方法，制定研究方案",
+        "kicker": "02 / DESIGN",
+        "color": "#4D9688"
+      }
+    },
+    {
+      "id": "node-3",
+      "position": {
+        "x": 580,
+        "y": 0
+      },
+      "width": 220,
+      "height": 132,
+      "data": {
+        "kind": "process",
+        "title": "数据采集",
+        "subtitle": "记录样本与实验观察",
+        "kicker": "03 / COLLECT",
+        "color": "#6486BB"
+      }
+    },
+    {
+      "id": "node-4",
+      "position": {
+        "x": 580,
+        "y": 230
+      },
+      "width": 220,
+      "height": 132,
+      "data": {
+        "kind": "process",
+        "title": "分析与验证",
+        "subtitle": "统计分析与假设检验",
+        "kicker": "04 / ANALYZE",
+        "color": "#9677B5"
+      }
+    },
+    {
+      "id": "node-5",
+      "position": {
+        "x": 290,
+        "y": 230
+      },
+      "width": 220,
+      "height": 132,
+      "data": {
+        "kind": "process",
+        "title": "结果与讨论",
+        "subtitle": "解释发现，界定结论",
+        "kicker": "05 / INTERPRET",
+        "color": "#BB9655"
+      }
+    },
+    {
+      "id": "node-6",
+      "position": {
+        "x": 0,
+        "y": 230
+      },
+      "width": 220,
+      "height": 132,
+      "data": {
+        "kind": "process",
+        "title": "图表与发表",
+        "subtitle": "清晰呈现研究成果",
+        "kicker": "06 / SHARE",
+        "color": "#4D9688"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "node-1",
+      "target": "node-2",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-2",
+      "source": "node-2",
+      "target": "node-3",
+      "sourceAnchor": "right",
+      "targetAnchor": "left",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-3",
+      "source": "node-3",
+      "target": "node-4",
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-4",
+      "source": "node-4",
+      "target": "node-5",
+      "sourceAnchor": "left",
+      "targetAnchor": "right",
+      "label": "",
+      "color": "#A2ABA8"
+    },
+    {
+      "id": "edge-5",
+      "source": "node-5",
+      "target": "node-6",
+      "sourceAnchor": "left",
+      "targetAnchor": "right",
+      "label": "",
+      "color": "#A2ABA8"
+    }
+  ]
+}
